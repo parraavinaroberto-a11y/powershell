@@ -3,3 +3,5 @@ Install-WindowsFeature Windows-Server-Backup
 wbadmin start systemstatebackup -backupTarget:E: -quiet
 
 wbadmin start systemstatebackup -backupTarget:\\ServidorBackup\ADBackup -user:DOMINIO\usuario -password:***** -quiet
+
+wbadmin enable backup -addtarget:E: -schedule:22:00 -systemstate -quiet
