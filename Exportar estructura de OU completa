@@ -1,0 +1,3 @@
+Get-ADOrganizationalUnit -Filter * |
+Select Name, DistinguishedName |
+Export-Csv C:\Temp\OUs.csv -NoTypeInformation
