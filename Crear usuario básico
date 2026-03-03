@@ -1,0 +1,9 @@
+New-ADUser `
+-Name "Juan Perez" `
+-GivenName "Juan" `
+-Surname "Perez" `
+-SamAccountName "jperez" `
+-UserPrincipalName "jperez@empresa.local" `
+-Path "OU=Usuarios,DC=empresa,DC=local" `
+-AccountPassword (ConvertTo-SecureString "P@ssw0rd123" -AsPlainText -Force) `
+-Enabled $true
