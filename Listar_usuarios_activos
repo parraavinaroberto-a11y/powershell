@@ -1,0 +1,3 @@
+Get-ADUser -Filter * -Properties Enabled |
+Where-Object {$_.Enabled -eq $true} |
+Select-Object Name, SamAccountName, UserPrincipalName
