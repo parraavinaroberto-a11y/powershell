@@ -1,1 +1,3 @@
 Install-WindowsFeature Windows-Server-Backup
+
+wbadmin start systemstatebackup -backupTarget:E: -quiet
