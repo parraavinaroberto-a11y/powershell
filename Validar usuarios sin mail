@@ -1,0 +1,2 @@
+Get-ADUser -Filter {Mail -notlike "*"} -Properties Mail |
+Select Name, SamAccountName
