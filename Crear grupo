@@ -1,0 +1,1 @@
+New-ADGroup -Name "App-RH" -GroupScope Global -Path "OU=Grupos,DC=empresa,DC=local"
