@@ -5,3 +5,8 @@ wbadmin start systemstatebackup -backupTarget:E: -quiet
 wbadmin start systemstatebackup -backupTarget:\\ServidorBackup\ADBackup -user:DOMINIO\usuario -password:***** -quiet
 
 wbadmin enable backup -addtarget:E: -schedule:22:00 -systemstate -quiet
+
+wbadmin get versions
+
+--Restore--
+wbadmin start systemstaterecovery -version:MM/DD/YYYY-HH:MM
