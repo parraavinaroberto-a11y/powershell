@@ -1,0 +1,3 @@
+Move-ADObject `
+-Identity "CN=Juan Perez,OU=Temp,DC=empresa,DC=local" `
+-TargetPath "OU=Usuarios,DC=empresa,DC=local"
