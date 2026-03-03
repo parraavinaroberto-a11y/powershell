@@ -1,0 +1,3 @@
+Get-ADUser -Filter * -Properties * |
+Select Name, SamAccountName, Mail, Department, Enabled |
+Export-Csv C:\Temp\Usuarios.csv -NoTypeInformation -Encoding UTF8
