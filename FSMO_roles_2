@@ -1,0 +1,2 @@
+Get-ADForest | Select SchemaMaster, DomainNamingMaster
+Get-ADDomain | Select PDCEmulator, RIDMaster, InfrastructureMaster
