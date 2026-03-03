@@ -1,0 +1,1 @@
+Get-ADGroupMember "App-Finanzas" | Select Name, ObjectClass
