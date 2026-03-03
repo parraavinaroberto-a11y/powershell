@@ -1,0 +1,4 @@
+Get-ADUser -Filter * -SearchBase "OU=Usuarios,DC=empresa,DC=local" |
+ForEach-Object {
+    Set-ADUser $_ -UserPrincipalName ($_.SamAccountName + "@nuevoDominio.com")
+}
