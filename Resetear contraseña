@@ -1,0 +1,3 @@
+Set-ADAccountPassword jperez `
+-Reset `
+-NewPassword (ConvertTo-SecureString "N3wP@ss123" -AsPlainText -Force)
