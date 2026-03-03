@@ -1,0 +1,3 @@
+Import-Csv C:\Temp\grupo.csv | ForEach-Object {
+    Add-ADGroupMember -Identity $_.Grupo -Members $_.Usuario
+}
